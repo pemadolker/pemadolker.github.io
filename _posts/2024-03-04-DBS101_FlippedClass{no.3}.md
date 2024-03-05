@@ -38,4 +38,5 @@ NULL values usually have these three interpretations i.e
 - Constraints such as UNIQUE, FOREIGN KEY, and CHECK may ignore rows with NULL values.
 
 ### Experience
-Today's flipped class topic was easy to understand and expert groups did a good job in discussing and understanding their topic well and was able to explain it well to the home groups and I understood the lesson ..
+Today's flipped class topic was easy to understand and expert groups did a good job in discussing and understanding their topic well and was able to explain it well to the home groups and I understood the lesson .
+
