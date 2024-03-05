@@ -12,7 +12,11 @@ The flipped class was conducted on the topic null values and set operations in S
 ### SET OPERATORS
 SET operators are used to combine the result of two queries. To be able to perform SET operators in SQL, datatypes must be compatible and the number and order of columns must be same.
 The SET operators are UNION, UNION ALL, INTERSECT and MINUS.
-
+─$ git clone https://github.com/pemadolker/pemadolker.github.io.git~  
+Cloning into 'pemadolker.github.io.git~'...
+remote: Repository not found.
+fatal: repository 'https://github.com/pemadolker/pemadolker.github.io.git~/' not found
+           
 - UNION - It is used to combine the result sets of two SELECT statements in which all duplicates are removed and only unique rows from both sets are returned.
 - UNION ALL - It combines all the records from both sets and the duplicates are not removed.
 - INTERSECT - It is used to combine two SELECT statements  which only returns the common rows. 
