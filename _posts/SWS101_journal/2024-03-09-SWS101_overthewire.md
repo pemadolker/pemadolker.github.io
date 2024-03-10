@@ -22,14 +22,13 @@ tags: [SWS101]
 - Used 'cd', 'ls', 'cat' commands to explore directories and read the content of files.
 - Used basic shell commands to navigate through the filesystem.
 - Added the path ./ when using cat command with special character filename instead of just cat <special_character_filename> because cat <special_character_filename> wouldnt return anything.
-
+![alt text](../../img/bandit/2nd.png)
 - Surrounded the filename with spaces with quotes to indicate that all of it belongs to the name for one file because without qoutes it assumes that  we looked for four files.
-
+![alt text](../../img/bandit/3rd.png)
 - Used ls -a to see all the files specifically hidden files.
-
-
+![alt text](../../img/bandit/4th.png)
 - Instead of using the command file<filename>, used a wildcard to get the type for all the files.
-
+![alt text](../../img/bandit/5th.png)
 
 #### Commands and Techniques used for level 0 - level 5:
 - `ssh bandit0@bandit.labs.overthewire.org -p 2220`
@@ -57,13 +56,14 @@ tags: [SWS101]
 - Used 'chmod' to permissions when necessary.
 - Used find command with some other command to meet all the specified criteria.
 - Used the pipe `|` to take the output of the first command as input into the second command.
-
 - Appended 2>/dev/null which will hide all error messages for files that I do not have permission.
+![alt text](../../img/bandit/7th.png)
 - Used grep to search lines that contain a specific pattern.
+![alt text](../../img/bandit/8th.png)
 - To find the line that occurs only once in the file, we first sorted the lines and then filtered for the unique one.
-
+![alt text](../../img/bandit/9th.png)
 - Used Strings command to extract human-readable strings from binary files.
-
+![alt text](../../img/bandit/10th.png)
 #### Commands and Techniques:
 - `find`,`du`, `grep`, `sort`, `chmod`, command substitution `$()`, `|`, `uniq`,`strings`
 
