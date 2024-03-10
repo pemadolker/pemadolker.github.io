@@ -22,9 +22,14 @@ tags: [SWS101]
 - Used 'cd', 'ls', 'cat' commands to explore directories and read the content of files.
 - Used basic shell commands to navigate through the filesystem.
 - Added the path ./ when using cat command with special character filename instead of just cat <special_character_filename> because cat <special_character_filename> wouldnt return anything.
-- Surrounded the filename with spaces with quotes to indicate that all of it belongs to the name for one file because without qoutes it assumes that we looked for four files.
+![alt text](image-1.png)
+- Surrounded the filename with spaces with quotes to indicate that all of it belongs to the name for one file because without qoutes it assumes that  we looked for four files.
+![alt text](image.png)
 - Used ls -a to see all the files specifically hidden files.
+![alt text](image-2.png)
+
 - Instead of using the command file<filename>, used a wildcard to get the type for all the files.
+![alt text](image-3.png)
 
 #### Commands and Techniques used for level 0 - level 5:
 - `ssh bandit0@bandit.labs.overthewire.org -p 2220`
@@ -52,11 +57,14 @@ tags: [SWS101]
 - Used 'chmod' to permissions when necessary.
 - Used find command with some other command to meet all the specified criteria.
 - Used the pipe `|` to take the output of the first command as input into the second command.
+![alt text](image-4.png)
+![alt text](image-5.png)
 - Appended 2>/dev/null which will hide all error messages for files that I do not have permission.
 - Used grep to search lines that contain a specific pattern.
 - To find the line that occurs only once in the file, we first sorted the lines and then filtered for the unique one.
+![alt text](image-7.png)
 - Used Strings command to extract human-readable strings from binary files.
-
+![alt text](image-6.png)
 #### Commands and Techniques:
 - `find`,`du`, `grep`, `sort`, `chmod`, command substitution `$()`, `|`, `uniq`,`strings`
 
@@ -81,7 +89,13 @@ tags: [SWS101]
 #### Commands and Techniques:
 - `tr`, `openssl`
 
+#### Lessons Learned:
+The challenges involved exploring the 'openssl' command, and improving file manipulation skills. These skills expanded the toolkit for cryptographic operations and improved the ability to navigate directories and extract data.
+
+### Level 16 - 20:
+//I couldnt proceed further
+
 #### Personal Reflection:
-- Finding the right balance between research and experimentation was crucial in overcoming challenges. Each level reinforced the importance of attention to detail and persistence.
+
 
 ---
