@@ -22,9 +22,11 @@ tags: [SWS101]
 - Used 'cd', 'ls', 'cat' commands to explore directories and read the content of files.
 - Used basic shell commands to navigate through the filesystem.
 - Added the path ./ when using cat command with special character filename instead of just cat <special_character_filename> because cat <special_character_filename> wouldnt return anything.
-![alt text](image-8.png)
+![alt text](image-19.png)
+
 - Surrounded the filename with spaces with quotes to indicate that all of it belongs to the name for one file because without qoutes it assumes that  we looked for four files.
 ![alt text](image-9.png)
+
 - Used ls -a to see all the files specifically hidden files.
 ![alt text](image-10.png)
 
