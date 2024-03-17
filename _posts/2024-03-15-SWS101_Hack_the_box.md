@@ -19,7 +19,7 @@ Learn the basics skills in cybersecurity pen-testing and understand how to conne
 1. Meow 
 - Nmap is a powerful network scanning tool for finding open ports on a target and ping the target to test the connnection . With root as username I was able to login into the target over telnet with a blank password. Then obtained root flag which serves as evidence of successful exploitation and is often used to verify completion of a challenge or test.
 
-\\pic of commands i learned frome each machine
+\\pic of commands i learned frome each machine 
 
 2. Fawn 
 - File Transfer Protocol(FTP) services usually listens on port 21. SFTP stands for "Secure File Transfer Protocol" which is a network protocol used for secure file transfer over a secure shell (SSH) connection. By using Nmap we could know what version is FTP running on the target and what OS type is running on the target. To login into FTP without having account, we use anonymous username. We get 230 as a response code in FTP when login is successful and get is the command used to download a file on FTP server. Get the root flag and submit it .
