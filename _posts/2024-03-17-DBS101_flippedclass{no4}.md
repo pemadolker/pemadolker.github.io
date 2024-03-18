@@ -68,9 +68,11 @@ after pivoting
     PIVOT can’t be used with WHERE, GROUP BY, or HAVING after the PIVOT clause.
 
 ### Rollup and cube
+
 `ROLLUP` generates multiple levels of subtotals based on the hierarchy of columns specified in the GROUP BY clause and rollup is  commonly used in financial reporting, sales analysis, and other scenarios where hierarchical summaries are needed.
 
 `CUBE` generates all possible combinations of values from the specified columns in the GROUP BY clause, producing comprehensive summary data and it is particularly useful when you want to analyze data from multiple dimensions simultaneously. 
 
 ### Experience
-Today's flipped class topics were easy and interesting and all the 4 groups did try their best in presenting it to the class with the demo of the aggregate function given to the group. It was actually interesting class so I would rate it 5 on 5?.
+
+Today's flipped class topics were easy and interesting and all the 4 groups did try their best in presenting it to the class with the demo of the aggregate function given to the group. It was actually interesting class so I would rate it 5 on 5..
