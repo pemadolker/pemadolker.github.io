@@ -21,8 +21,6 @@ NoSQL stands for Not only SQL.
 
 ### Types of NoSQL Databases
 
-![alt text](image.png)
-
 #### Document-based databases
 
 A document-based database is a type of database that uses document to store data, which are usually in formats like JSON,BSON,or XML rather than storing data in tabular form like relational databases.
