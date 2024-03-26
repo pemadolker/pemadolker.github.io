@@ -155,4 +155,4 @@ Time series databases are specialized databases optimized for storing, querying,
 5. Healthcare and life sciences for patient monitoring.
 
 ### Experience
-I would rate this flipped class 4 on 5. I also played a part in explaining my topic to the home group and my home group friends also did a very good job in explaining it.
+I would rate this flipped class 4 on 5. I also played a part in explaining my topic to the home group and my home group friends also did a very good job in explaining it to us.
