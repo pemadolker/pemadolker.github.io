@@ -1,6 +1,6 @@
 ---
 Title: DBS101 Flipped Class 4
-categories: [DBS101, Flipped_Class2]
+categories: [DBS101, Flipped_Class4]
 tags: [DBS101]
 ---
 
@@ -76,3 +76,4 @@ after pivoting
 ### Experience
 
 Today's flipped class topics were easy and interesting and all the 4 groups did try their best in presenting it to the class with the demo of the aggregate function given to the group. It was actually interesting class so I would rate it 5 on 5..
+
