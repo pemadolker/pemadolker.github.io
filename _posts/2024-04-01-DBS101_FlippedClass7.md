@@ -67,4 +67,4 @@ important procedures to be followed when building a relational database from scr
 I have gained knowledge on storage and buffer management through tasks such as handling allocations, reads, writes, and deallocations, investigating RAID configurations, and understanding buffer pool administration in a database system. These tasks provided practical knowledge for effective storage and buffer management, ensuring data integrity, performance, and efficiency in various computing environments.
 
 ### Experience
-It is the first time we did flipped class on practical work. It wasnt bad but I enjoyed moreworking and learning as a group. 
+It is the first time we did flipped class on practical work. It wasnt bad but I enjoyed moreworking and learning as a group 
