@@ -53,6 +53,3 @@ Understanding these advanced database concepts equips us with the knowledge to d
 
 In conclusion, journey through buffer trees, spatial and temporal indexing, and Bitmap indices has equipped us with the tools to efficiently organize and query large dataset. These concept are essential for building high-performing database systems.
 
-
-### Experience
-Dividing groups using songs like this was an interesting thing in this flipped class and quiz was also interesting.
