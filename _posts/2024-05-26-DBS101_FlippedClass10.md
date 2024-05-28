@@ -16,10 +16,9 @@ tags: [DBS101]
 Transaction is started with the command `begin transaction` and ended with `end transaction`. All operations performed between these two statements are part of the transaction.
 
 ### Transaction Properties
-What are the properties a transaction should possess? 
+What are the properties a transaction should possess?
 
-![alt text](image.png)
-
+![alt text](image-1.png)
 
 ### A Simple Transaction Model
 Consider a transaction Ti that transfers $50 from account A to account B.
@@ -48,9 +47,9 @@ concurrency control.
 
 We did this transaction in postgresql.
 
-![alt text](image-1.png)                                        
-
 ![alt text](image-2.png)
+
+![alt text](image.png)
 
 Storage Structure
 It is categorized based on speed, capacity, and resilience:
@@ -75,10 +74,11 @@ compensating transactions may be necessary.
 ![alt text](image-4.png)
 
 - Active: Initial state, transaction executing.
-![alt text](image-5.png)
+
+![alt text](image-3.png)
 
 - Partially committed: After final statement execution.
-![alt text](image-3.png)
+![alt text](image-5.png)
 
 - Failed: Normal execution can't proceed.
 ![alt text](image-6.png)
@@ -88,6 +88,7 @@ compensating transactions may be necessary.
 
 - Committed: Successfully completed.
 ![alt text](image-8.png)
+
 
 ### Transaction States and Handling Failures
 
