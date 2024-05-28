@@ -1,6 +1,6 @@
 ---
 Title: DBS101 Flipped Class 9
-categories: [DBS101, Flipped_Class9]
+categories: [DBS101, Flipped_Class]
 tags: [DBS101]
 ---
 ### Topic: Query Optimization

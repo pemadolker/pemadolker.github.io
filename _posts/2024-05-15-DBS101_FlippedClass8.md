@@ -1,6 +1,6 @@
 ---
 Title: DBS101 Flipped Class 8
-categories: [DBS101, Flipped_Class8]
+categories: [DBS101, Flipped_Class]
 tags: [DBS101]
 ---
 ### Topic: Storage and buffer management
