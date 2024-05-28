@@ -45,19 +45,19 @@ Execute transactions serially or use
 concurrency control.
 
 We did this transaction in postgresql.
-![alt text](image-1.png)
-
 ![alt text](image-2.png)
+![alt text](image-3.png)
 
-Storage Structure
+### Storage Structure
+
 It is categorized based on speed, capacity, and resilience:
-Volatile storage: Access is fast, allows direct access to data items but it doesn't survive system crashes.
+**Volatile storage**: Access is fast, allows direct access to data items but it doesn't survive system crashes.
 example- main memory and cache memory 
 
-Non-volatile storage: Survives system crashes but it is slower and susceptible to failures leading to data loss.
+**Non-volatile storage**: Survives system crashes but it is slower and susceptible to failures leading to data loss.
 example- magnetic disk, flash storage, optical media, magnetic tapes.
 
-Stable storage: Information is never lost even in the event of hardware failures and power outages.
+**Stable storage**: Information is never lost even in the event of hardware failures and power outages.
 
 For a transaction to be durable and atomic,changes and log records must be written to stable storage.
 
@@ -67,22 +67,22 @@ consistent state, persisting despite system failures.
 compensating transactions may be necessary.
 
 ### A simple abstract transaction model:
-![alt text](image-8.png)
+![alt text](image-1.png)
 
 - Active: Initial state, transaction executing.
-![alt text](image-7.png)
+![alt text](image-8.png)
 
 - Partially committed: After final statement execution.
-![alt text](image-3.png)
-
-- Failed: Normal execution can't proceed.
 ![alt text](image-4.png)
 
-- Aborted: Rolled back, database restored to pre-transaction state.
+- Failed: Normal execution can't proceed.
 ![alt text](image-5.png)
 
-- Committed: Successfully completed.
+- Aborted: Rolled back, database restored to pre-transaction state.
 ![alt text](image-6.png)
+
+- Committed: Successfully completed.
+![alt text](image-7.png)
 
 
 ### Transaction States and Handling Failures
