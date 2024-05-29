@@ -17,7 +17,7 @@ Transaction is started with the command `begin transaction` and ended with `end 
 
 ### Transaction Properties
 What are the properties a transaction should possess?
-![alt text](img/DBS/image-6.png)
+![alt text](image-4.png)
 
 ### A Simple Transaction Model
 Consider a transaction Ti that transfers $50 from account A to account B.
@@ -45,10 +45,7 @@ Execute transactions serially or use
 concurrency control.
 
 We did this transaction in postgresql.
-![alt text](img/DBS/image-7.png)
-
-![alt text](img/DBS/image-8.png)
-
+![alt text](image.png)
 ### Storage Structure
 
 It is categorized based on speed, capacity, and resilience:
@@ -68,22 +65,20 @@ consistent state, persisting despite system failures.
 compensating transactions may be necessary.
 
 ### A simple abstract transaction model:
-![alt text](img/DBS/image.png)
+![alt text](image-3.png)
 
 - Active: Initial state, transaction executing.
-![alt text](img/DBS/image-1.png)
+![alt text](image-1.png)
 
 - Partially committed: After final statement execution.
-![alt text](img/DBS/image-2.png)
+![alt text](image-2.png)
 
 - Failed: Normal execution can't proceed.
-![alt text](img/DBS/image-3.png)
 
 - Aborted: Rolled back, database restored to pre-transaction state.
-![alt text](img/DBS/image-4.png)
+
 
 - Committed: Successfully completed.
-![alt text](img/DBS/image-5.png)
 
 
 ### Transaction States and Handling Failures
