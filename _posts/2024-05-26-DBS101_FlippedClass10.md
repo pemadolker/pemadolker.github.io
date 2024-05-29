@@ -17,7 +17,7 @@ Transaction is started with the command `begin transaction` and ended with `end 
 
 ### Transaction Properties
 What are the properties a transaction should possess?
-![alt text](image-4.png)
+
 
 ### A Simple Transaction Model
 Consider a transaction Ti that transfers $50 from account A to account B.
@@ -45,7 +45,7 @@ Execute transactions serially or use
 concurrency control.
 
 We did this transaction in postgresql.
-![alt text](image.png)
+
 ### Storage Structure
 
 It is categorized based on speed, capacity, and resilience:
@@ -65,13 +65,11 @@ consistent state, persisting despite system failures.
 compensating transactions may be necessary.
 
 ### A simple abstract transaction model:
-![alt text](image-3.png)
+
 
 - Active: Initial state, transaction executing.
-![alt text](image-1.png)
 
 - Partially committed: After final statement execution.
-![alt text](image-2.png)
 
 - Failed: Normal execution can't proceed.
 
