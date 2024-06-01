@@ -47,7 +47,7 @@ Lock Release: The transaction can release locks.
 No Lock Acquisition: During this phase, the transaction cannot acquire any new locks.
 Operation: This phase begins once the transaction starts releasing any of its locks.
 
-
+![alt text](image-1.png)
 ### Deadlock
 A deadlock occurs when transactions form a cycle, each waiting for locks to be released by the other. Deadlocks are managed through two primary methods: detection and prevention.
 
@@ -152,6 +152,8 @@ MVCC maintains multiple physical versions of a single logical object in the data
 - Consistent Snapshots: Read-only transactions can read a consistent snapshot without acquiring locks.
 - Time-Travel Queries: Supports queries that can retrieve past versions of data.
 
+![alt text](image-2.png)
+
 ### Snapshot Isolation (SI)
 Snapshot Isolation (SI) is a concurrency control method where each transaction operates on a consistent snapshot of the database taken at the start of the transaction.
 
@@ -177,5 +179,29 @@ Defining application-specific operations, such as increment or conditional incre
 - Real-Time Databases
 Real-time databases prioritize transactions with deadlines, influencing concurrency control decisions. High-priority transactions may preempt lower-priority ones to meet deadlines. Optimistic concurrency control reduces missed deadlines more effectively than traditional locking protocols, enhancing system responsiveness and reliability.
 
+### Lock vs Latch
+### Differences:
+1. Purpose:
+  - Locks: Ensure transactional consistency and integrity.
+  - Latches: Protect in-memory data structures during operations.
+
+2. Granularity:
+  - Locks: Can be coarse or fine-grained.
+  - Latches: Usually fine-grained.
+
+3. Duration:
+  - Locks: Held for the entire transaction.
+  - Latches: Held for the duration of an operation.
+
+4. Scope:
+  - Locks: Ensure ACID properties.
+  - Latches: Ensure the integrity of memory structures.
+
+### Similarities:
+1. Concurrency Control: Both manage concurrent access to ensure operations do not conflict.
+2. Types of Access: Both can be shared or exclusive.
+3. Blocking: Both can block other operations when in exclusive mode.
+
+
 ### Conclusion
-Throughout this flipped class on concurrency control, I've gained insights into the fundamental importance of locks in ensuring data integrity and consistency in database transactions. We've explored the mechanisms of shared and exclusive locks, delved into the Two-Phase Locking protocol, and examined strategies for managing deadlocks through detection and prevention methods. Moreover, we've explored advanced techniques like timestamp ordering concurrency control, Multi-Version Concurrency Control (MVCC), and Snapshot Isolation (SI), each offering unique approaches to managing concurrent access to data while maintaining consistency and performance. Overall, this session has provided a comprehensive understanding of concurrency control in database systems, essential for ensuring reliable and efficient transaction processing.
+Throughout this flipped class on concurrency control, I've gained insights into the fundamental importance of locks in ensuring data integrity and consistency in database transactions. We've explored the mechanisms of shared and exclusive locks, delved into the Two-Phase Locking protocol, and examined strategies for managing deadlocks through detection and prevention methods. Moreover, we've explored advanced techniques like timestamp ordering concurrency control, Multi-Version Concurrency Control (MVCC), and Snapshot Isolation (SI), each offering unique approaches to managing concurrent access to data while maintaining consistency and performance. Overall, this session has provided a comprehensive understanding of concurrency control in database systems, essential for ensuring reliable and efficient transaction processing.Locks are used to maintain transactional consistency, while latches protect the integrity of in-memory data structures during short-term operations.
