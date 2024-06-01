@@ -25,8 +25,7 @@ Locks are mechanisms used to control concurrent access to data. They ensure data
 - Shared Lock (S-lock): Multiple transactions can read the data but cannot modify it.
 - Exclusive Lock (X-lock): Only one transaction can read and modify the data. No other transaction can read or write the data until the exclusive lock is released.
 
-Compatibility matrix
-![alt text](image.png)
+![alt text](<../img/DBS/Screenshot from 2024-06-01 15-48-13.png>)
 
 Every transaction must request a lock from the concurrency-control manager for its operations. It can proceed only after the lock is granted, allowing multiple readers but only one writer at a time and Locks are granted when no other transaction holds a conflicting lock and there are no earlier pending requests, preventing starvation.
 
@@ -178,3 +177,5 @@ Defining application-specific operations, such as increment or conditional incre
 - Real-Time Databases
 Real-time databases prioritize transactions with deadlines, influencing concurrency control decisions. High-priority transactions may preempt lower-priority ones to meet deadlines. Optimistic concurrency control reduces missed deadlines more effectively than traditional locking protocols, enhancing system responsiveness and reliability.
 
+### Conclusion
+Throughout this flipped class on concurrency control, I've gained insights into the fundamental importance of locks in ensuring data integrity and consistency in database transactions. We've explored the mechanisms of shared and exclusive locks, delved into the Two-Phase Locking protocol, and examined strategies for managing deadlocks through detection and prevention methods. Moreover, we've explored advanced techniques like timestamp ordering concurrency control, Multi-Version Concurrency Control (MVCC), and Snapshot Isolation (SI), each offering unique approaches to managing concurrent access to data while maintaining consistency and performance. Overall, this session has provided a comprehensive understanding of concurrency control in database systems, essential for ensuring reliable and efficient transaction processing.
