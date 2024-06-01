@@ -47,7 +47,8 @@ Lock Release: The transaction can release locks.
 No Lock Acquisition: During this phase, the transaction cannot acquire any new locks.
 Operation: This phase begins once the transaction starts releasing any of its locks.
 
-![alt text](image-1.png)
+![alt text](<../img/DBS/Screenshot from 2024-06-01 23-31-21.png>)
+
 ### Deadlock
 A deadlock occurs when transactions form a cycle, each waiting for locks to be released by the other. Deadlocks are managed through two primary methods: detection and prevention.
 
@@ -146,13 +147,15 @@ MVCC maintains multiple physical versions of a single logical object in the data
 - New Versions: Created when a transaction writes to an object.
 - Reading Versions: Transactions read the newest version available at the time the transaction started.
 
+![alt text](<../img/DBS/Screenshot from 2024-06-01 23-40-15.png>)
+
 ### Key Features:
 - Writers Do Not Block Readers: Allows higher concurrency.
 - Readers Do Not Block Writers: Ensures that read operations are not delayed by write operations.
 - Consistent Snapshots: Read-only transactions can read a consistent snapshot without acquiring locks.
 - Time-Travel Queries: Supports queries that can retrieve past versions of data.
 
-![alt text](image-2.png)
+
 
 ### Snapshot Isolation (SI)
 Snapshot Isolation (SI) is a concurrency control method where each transaction operates on a consistent snapshot of the database taken at the start of the transaction.
@@ -160,6 +163,8 @@ Snapshot Isolation (SI) is a concurrency control method where each transaction o
 - Consistent Snapshot: When a transaction starts, it sees a consistent snapshot of the database at that time.
 - First Writer Wins: If two transactions update the same object, the first writer wins. This is susceptible to the Write Skew Anomaly.
 - Write Skew Anomaly: Occurs when two transactions read an overlapping data set, make disjoint updates, and commit without seeing each other's updates.
+
+![alt text](<../img/DBS/Screenshot from 2024-06-01 23-38-00.png>)
 
 ### Traditional Locking Techniques
 - Serializability: Ensures that the result of concurrent transactions is the same as if they were executed sequentially.
