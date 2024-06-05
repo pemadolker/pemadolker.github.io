@@ -27,6 +27,8 @@ tags: [DBS101]
 
 Log records are essentially entries within a log file, which is a computer-generated record of events, activities, and usage patterns. These files are created by various software applications, operating systems, and devices to provide a historical record of what's happening within the system.
 
+![alt text](<../img/DBS/Screenshot from 2024-06-05 14-01-56.png>)
+
 **Details of events**: Log records capture what happened, when it happened, and why (where possible) within a system.
 
 **Troubleshooting**: They help pinpoint issues by providing a history of activity.
@@ -68,6 +70,8 @@ Log records are essentially entries within a log file, which is a computer-gener
 ### Recovery Algorithms (ARIES):
 Three Phases: Analysis, Redo (replaying history), and Undo (rollback).
 
+![alt text](<../img/DBS/Screenshot from 2024-06-05 14-04-07.png>)
+
 - ARIES employs a three-phase approach to ensure data consistency after a system crash:
 
 1. Analysis Pass:
@@ -105,8 +109,8 @@ Replays the logged actions, essentially redoing the history of committed transac
 - Fast Restart: Crucial due to loading the entire database into memory during recovery.
 - Parallel Recovery: Utilizes multiple CPU cores to speed up recovery.
 
-### Dblogging
-Dblogging refers to the process of writing detailed logs within a database system.
+### Db logging
+Db logging refers to the process of writing detailed logs within a database system.
 
 - Why is Dblogging Important?
 
@@ -122,6 +126,8 @@ Dblogging refers to the process of writing detailed logs within a database syste
 ### Recovery algorithm(Shadow Paging)
 
 Shadow Paging is a recovery algorithm that focuses on maintaining a "shadow copy" of the database to ensure data consistency after a system crash.
+
+![alt text](<../img/DBS/Screenshot from 2024-06-05 14-00-12.png>)
 
 ### How it works:
 
